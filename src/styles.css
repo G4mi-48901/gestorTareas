@@ -1,21 +1,31 @@
 /* Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient( to bottom ,#6F67BC,
+     #d0A6E2, #FFABC3);
+    height: 100vh;
+    font-family: "Nerko One", cursive;
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
-
+.logo img {
+    width: 200px;
+}
+.saludo h1,
+span{
+    color: white;
+    letter-spacing: 1px;
+}
 /*Estilos para el contenedor principal*/
 #app{
-    background-color: white;
+    background-color: #B1CFEB;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 /*Estilos para el formulario*/
 form{
@@ -29,11 +39,12 @@ input{
     margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 3px;
+    opacity: .5;
 }
 /**Estilos para el botón*/
 button{
     padding: 5px 8px;
-    background-color: #007dff;
+    background-color: #5A85A9;
     color: white;
     border: none;
     border-radius: 3px;
@@ -46,9 +57,9 @@ ul{
 }
 /*Estilo de los elementos de la lista*/
 li{
-    background-color: #f4f4f4;
+    background-color: #FEEAE0;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -57,5 +68,5 @@ li{
 /*Estilos para completar tarea*/
 li.completed{
     text-decoration: line-through;
-    color:#888;
+    color:#888888;
 }
